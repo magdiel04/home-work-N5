@@ -24,7 +24,32 @@ print("Hello, World!")
 //        }
 //    }
 //}
+print("""
+Чтобы узнать какое слово самое длинное и короткое
+напишите слова в строчку через "пробел"
+в конце ещё раз "пробел" и нажмите "Enter"
 
+""")
+
+let slova = readLine()!
+var mas:[String] = []
+var word = ""
+var mas1:[Int] = []
+for o in slova {
+    if o != "," && o != " "{
+        word += String(o)
+    }else {
+        mas.append(String(word.count) + (" букв в слове \(word)"))
+       
+            word = ""
+       
+    }
+}
+
+var mas2:[String] = mas.sorted()
+
+print("\(mas2[mas2.count - 1]) ")
+print("\(mas2[0]) ")
 
 
 
@@ -195,7 +220,7 @@ d - потому что они молчат
 //var otvet8 = readLine()!
 //var otvet9 = readLine()!
 //var otvet10 = readLine()!
-
+//
 
 
 
